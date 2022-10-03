@@ -1,0 +1,94 @@
+.info-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rate-square {
+    height: 230px;
+    width: 180px;
+    position: relative;
+    opacity: 0.8;
+    bottom: 100px;
+    background-color: #b22024;
+    order: 1;
+}
+
+#rate-number {
+    position: absolute;
+    color: white;
+    right: 65px;
+    top: 40px;
+    font-size: 50px;
+}
+#rate-text {
+    position: relative;
+    top: 160px;
+    text-align: right;
+    right: 10px;
+    color: white;
+}
+
+.rate-stars {
+    position: absolute;
+    right: 150;
+    left: 0;
+}
+
+#users-rate {
+    position: absolute;
+    top: 170px;
+    color: white;
+    left: 20px;
+}
+#users-rate-text {
+    position: absolute;
+    top: 190px;
+    color: white;
+    right: 25px;
+    font-size: small;
+}
+.movie-info {
+    position: relative;
+    order: 2;
+    color: white;
+    bottom: 100px;
+    right: 10px;
+    flex-grow: 1;
+}
+.movie {
+    text-align: left;
+    bottom: 100px;
+    margin-left: 20px;
+}
+#info {
+    text-align: right;
+}
+.movie-info hr {
+    background-color: #4e4e50;
+    width: 80%;
+    position: relative;
+}
+#summary {
+    text-align: right;
+    position: absolute;
+    margin-left: 20px;
+}
+.movie-poster {
+    order: 3;
+    position: relative;
+    bottom: 100px;
+}
+.movie-img{
+    top: 40px;
+    position: relative;
+    width: 100%;
+}
+.watchlist-btn{
+    background-color: #b22024;
+    position: relative;
+    right:86%;
+    width: 180px;
+    height: 10%;
+    top:160px;
+    color: aliceblue;
+}

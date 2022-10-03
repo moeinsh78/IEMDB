@@ -1,0 +1,25 @@
+#mainNav {
+    background-color: #b22024;
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    box-sizing: content-box;
+    height: 40px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 40px;
+}
+
+.prof-icon {
+    margin-right: 10px;
+    /* right: 100px; */
+    width: 40px;
+    height: 40px;
+}
+#select {
+    height: 40px;
+}

@@ -1,0 +1,37 @@
+.movies-table {
+    /* position: relative; */
+    margin-top: 200px;
+    width: 80%;
+}
+
+.sort-factor {
+    /* position: absolute; */
+    width: 10%;
+    display: flex;
+    right: 30px;
+    flex-direction: column;
+    position: absolute;
+}
+
+.sort-info-header {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    order: 1;
+    height: 20%;
+}
+
+.sort-button {
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+.sort-info-bottom {
+    height: 80%;
+    order: 2;
+    text-align: center;
+    background-color: #b22024;
+    border-radius: 30px;
+}

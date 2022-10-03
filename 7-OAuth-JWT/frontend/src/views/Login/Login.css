@@ -1,0 +1,39 @@
+.form-box {
+    position: relative;
+    margin: 10% auto auto;
+    width: 50%;
+    height: 50%;
+    background-color: #4E4E50;
+    padding: 3% 10%;
+    border-radius: 30px;
+    color: white;
+    text-align: right;
+}
+
+.form-title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.login-btn {
+    color: white;
+    background-color: #b22024;
+    font-weight: bold;
+    border: none;
+}
+
+.forget-pass-link{
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+label {
+    margin-bottom: 0.5rem;
+}

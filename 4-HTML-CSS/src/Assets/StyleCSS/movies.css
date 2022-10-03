@@ -1,0 +1,74 @@
+.sort-factor {
+    /*margin-top: 400px;*/
+    width: 10%;
+    display: flex;
+    right: 30px;
+    flex-direction: column;
+    position: absolute;
+}
+
+.sort-info-header {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    order: 1;
+    height: 20%;
+}
+
+.sort-button {
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+.sort-info-bottom {
+    height: 80%;
+    order: 2;
+    text-align: center;
+    background-color: #b22024;
+    border-radius: 30px;
+}
+
+.movies-table {
+    margin-top: 200px;
+    width: 80%;
+}
+
+@media (max-width: 1024px) {
+    .movies-table {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    .movies-table {
+        max-width: none;
+    }
+    .sort-factor {
+        width: 10%;
+    }
+}
+
+
+.hover-item {
+    margin: 5%;
+}
+
+.movie-image {
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    border: 2px solid white;
+}
+
+
+.hover-info {
+    margin: 5%;
+    border-radius: 30px;
+    width: 80%;
+    height: auto;
+    max-height: 300px;
+    border: 2px solid white;
+}

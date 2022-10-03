@@ -1,0 +1,39 @@
+.comment {
+    background-color: white;
+    border-radius: 5px;
+    order:2;
+    margin: 20px 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.comment hr {
+    margin: 0;
+}
+.comment-text {
+    text-align: right;
+    position: relative;
+    right: 10px;
+    margin-top: 1rem;
+}
+.vote-btn {
+    position: relative;
+    border-radius: 100%;
+    width: 20px;
+    height: 25px;
+    bottom: 30px;
+}
+.arrow {
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+.number {
+    position: relative;
+    color: black;
+    top: 20px;
+    left: -5px;
+}
+.user-name {
+    margin-top: 1rem;
+    text-align: right;
+}

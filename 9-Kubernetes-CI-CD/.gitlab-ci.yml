@@ -1,0 +1,30 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: docker:latest
+  stage: build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "moeiiinsh" -p "moein1378" quay.io
+  
+  script:
+    - docker build --pull -t quay.io/moeiiinsh/iemdb_backend .
+    - docker push quay.io/moeiiinsh/iemdb_backend
+
+  # Run this job in a branch where a Dockerfile exists
+  rules:
+    - if: $CI_COMMIT_BRANCH
+      exists:
+        - Dockerfile
+
+deploy:
+  image: quay.io/alizare1/bolbolestan:kubectl-ovpn
+  stage: deploy
+  # when: manual
+  before_script:
+    - echo $KUBE_CONFIG
+  script:
+    - kubectl --kubeconfig $KUBE_CONFIG set image deployment/backend backend=quay.io/moeiiinsh/iemdb_backend

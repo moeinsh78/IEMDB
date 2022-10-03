@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: database
+  labels:
+    app: database
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: database
+  template:
+    metadata:
+      labels:
+        app: database
+    spec:
+      volumes:
+      - name: db-pvc-storage
+          persistentVolumeClaim:
+            claimName: db-pvc
+      containers:
+      - env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "12345678"
+        image: docker.repos.balad.ir/mysql
+        imagePullPolicy: Always
+        name: database
+        image: docker.repos.balad.ir/mysql
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 3306
+        resources:
+          limits:
+            cpu: 0.2
+            memory: "500Mi"
+        volumeMounts:
+          - mountPath: /var/lib/mysql
+            name: db-pvc-storage

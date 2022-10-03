@@ -1,0 +1,8 @@
+.birthday-form {
+    width: 100%
+}
+
+.birthday-field::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 3;
+}

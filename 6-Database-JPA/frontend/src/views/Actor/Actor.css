@@ -1,0 +1,56 @@
+.actor-info {
+    display: flex;
+    flex-direction: row;
+}
+
+#actor-img {
+    height: 555px;
+    order: 2;
+    padding:0;
+    position: relative;
+    width: 30%;
+    top:40px;
+}
+
+#info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+#general-info {
+    order: 1;
+}
+
+#title {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+#movie-title {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+#description {
+    position: relative;
+    text-align: right;
+    color: white;
+    right: 20px;
+}
+
+#movies {
+    order: 2;
+    top: 12%;
+    background-color: #4e4e50;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.movies-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+

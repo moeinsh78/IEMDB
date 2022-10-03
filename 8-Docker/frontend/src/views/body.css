@@ -1,0 +1,11 @@
+body{
+    background-color: #292929;
+    font-family: "Vazir", serif !important;
+}
+
+.spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -4em;
+}

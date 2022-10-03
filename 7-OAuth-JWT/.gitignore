@@ -1,0 +1,59 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend.pnp.js
+
+# testing
+/frontend/coverage
+
+# production
+/frontend/build
+
+# misc
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+
+# backend
+
+/backend/ie-ca5/HELP.md
+backend/ie-ca5/target/
+!backend/ie-ca5/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+/backend/ie-ca5/.apt_generated
+/backend/ie-ca5/.classpath
+/backend/ie-ca5/.factorypath
+/backend/ie-ca5/.project
+/backend/ie-ca5/.settings
+/backend/ie-ca5/.springBeans
+/backend/ie-ca5/.sts4-cache
+
+### IntelliJ IDEA ###
+/backend/ie-ca5/.idea
+/backend/ie-ca5/*.iws
+/backend/ie-ca5/*.iml
+/backend/ie-ca5/*.ipr
+
+### NetBeans ###
+/backend/ie-ca5//nbproject/private/
+/backend/ie-ca5//nbbuild/
+/backend/ie-ca5//dist/
+/backend/ie-ca5//nbdist/
+/backend/ie-ca5//.nb-gradle/
+/backend/ie-ca5/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+/backend/ie-ca5/.vscode/

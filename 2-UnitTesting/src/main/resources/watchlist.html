@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WatchList</title>
+    <style>
+        li {
+        	padding: 5px
+        }
+        table{
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="name">name: </li>
+        <li id="nickname">nickname: @</li>
+    </ul>
+    <table>
+        <tr>
+            <th>Movie</th>
+            <th>releaseDate</th> 
+            <th>director</th> 
+            <th>genres</th> 
+            <th>imdb Rate</th> 
+            <th>rating</th> 
+            <th>duration</th>
+            <th>Links</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="">Link</a></td>
+            <td>        
+                <form action="/removeFromWatchList" method="POST" >
+                    <input type="hidden" name="movie_id" value="">
+                    <input type="hidden" name="user_id" value="">
+                    <button type="submit">Remove</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

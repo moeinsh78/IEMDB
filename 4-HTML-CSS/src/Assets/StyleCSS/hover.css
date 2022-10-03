@@ -1,0 +1,20 @@
+.hover-item:hover .hover-info {
+    visibility: visible;
+    opacity: 0.8;
+}
+.hover-txt {
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+}
+.hover-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #b22024;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}

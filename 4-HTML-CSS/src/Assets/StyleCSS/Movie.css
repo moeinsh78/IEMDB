@@ -1,0 +1,244 @@
+.movie-img{
+    top: 40px;
+    position: relative;
+    width: 100%;
+}
+.rate-square {
+    height: 210px;
+    width: 180px;
+    position: relative;
+    opacity: 0.9;
+    bottom: 100px;
+    background-color: #b22024;
+    order: 1;
+}
+#rate-number {
+    position: absolute;
+    color: white;
+    right: 65px;
+    top: 40px;
+    font-size: 50px;
+}
+#rate-text {
+    position: relative;
+    top: 140px;
+    text-align: right;
+    right: 10px;
+    color: white;
+}
+.star_icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 50px;
+    left: 90px;
+}
+
+#users-rate {
+    position: absolute;
+    top: 150px;
+    color: white;
+    left: 20px;
+}
+.info-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.movie-info {
+    position: relative;
+    order: 2;
+    color: white;
+    bottom: 100px;
+    right: 10px;
+    flex-grow: 1;
+}
+.movie-poster {
+    order: 3;
+    position: relative;
+    bottom: 100px;
+}
+.movie {
+    text-align: left;
+    bottom: 100px;
+    margin-left: 20px;
+}
+#info {
+    text-align: right;
+}
+.movie-info hr {
+    background-color: #4e4e50;
+    width: 80%;
+    position: relative;
+}
+#summary {
+    text-align: right;
+    position: absolute;
+    margin-left: 20px;
+}
+.extra-info {
+    display: flex;
+    flex-direction: column;
+}
+.extra-info > div {
+    margin: 10px;
+}
+#cast {
+    background-color: #4e4e50;
+    border-radius: 10px;
+    order: 1;
+}
+#comments {
+    background-color: #4e4e50;
+    border-radius: 10px;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.wrapper section {
+    width: 100%;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+}
+.wrapper section .hover-item {
+    position: relative;
+    transition: 250ms all;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.wrapper section .hover-item:hover {
+    margin: 0 40px;
+    transform: scale(1.1);
+}
+.wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 5em;
+    width: 80px;
+    text-align: center;
+    z-index: 1;
+}
+.wrapper section a:nth-of-type(1) {
+    position: absolute;
+    top:30px;
+    right: 0;
+    opacity: 1;
+    background: none;
+    padding: 0;
+}
+.wrapper section a:nth-of-type(2) {
+    position: absolute;
+    top:30px;
+    left: 0;
+    opacity: 1;
+    background: none;
+    padding: 0;
+}
+.cast {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+}
+.hover-info {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #summary {
+        font-size: 13px;
+    }
+    .cast {
+        width: 120px;
+        height: 120px;
+    }
+    .wrapper section .hover-item {
+        margin-top: -10px;
+    }
+    .wrapper section a:nth-of-type(1) {
+        top:0;
+    }
+    .wrapper section a:nth-of-type(2) {
+        top:0;
+    }
+    .hover-info {
+        height: 120px;
+        width: 120px;
+    }
+    .hover-txt{
+        margin-top: 40px;
+        font-size: 10px;
+    }
+}
+
+.add-comment-form {
+    background-color: white;
+    border-radius: 5px;
+    order:1;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.comment {
+    background-color: white;
+    border-radius: 5px;
+    order:2;
+    margin: 20px 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#form-label {
+    text-align: right;
+}
+.btn-sm {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100px;
+}
+.user-name {
+    text-align: right;
+}
+.comment hr {
+    margin: 0;
+}
+.comment-text {
+    text-align: right;
+    position: relative;
+}
+.vote-btn {
+    position: relative;
+    border-radius: 100%;
+    width: 20px;
+    height: 25px;
+    bottom: 30px;
+}
+.arrow {
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+.number {
+    position: relative;
+    color: black;
+    top: 20px;
+    left: 2px;
+}
+
+

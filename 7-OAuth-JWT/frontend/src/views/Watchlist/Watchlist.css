@@ -1,0 +1,37 @@
+.watchlist-movies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .watchlist-movies {
+        width: 100%;
+    }
+}
+
+
+.suggestion-movies {
+    background-color: #4E4E50;
+    border-radius: 20px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.suggestion-box-header {
+    order: 1;
+    height: 10%;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+.suggestion-box-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 2;
+}
