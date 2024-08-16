@@ -25,5 +25,5 @@ IEMDB is a responsive web application inspired by IMDB, developed as a course pr
 
 ## Contributors
 
-- [@moeiiinsh](https://github.com/moeinsh78)
+- [@moeinsh78](https://github.com/moeinsh78)
 - [@atiarmn](https://github.com/atiarmn)
